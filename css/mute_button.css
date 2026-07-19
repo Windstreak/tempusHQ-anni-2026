@@ -1,0 +1,18 @@
+.mute-toggle{
+    position: absolute;
+    left: 87.5%;
+    top: 2%;
+}
+.mute-toggle:hover{
+    background-color: #807e7b6e;
+}
+.mute-toggle svg{
+    height: 50px;
+    width: 50px;
+}
+.mute-toggle .unmuted{
+    display: inline;
+}
+.mute-toggle .muted{
+    display: none;
+}

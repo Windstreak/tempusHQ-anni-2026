@@ -1,0 +1,148 @@
+.entries{
+    position: absolute;
+    padding-top: 10px;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.entry{
+    transform-origin: top left;
+    position: absolute;
+}
+.entry:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+.entry-overlay{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(85, 44, 150, 0.5);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.entry-overlay .image{
+    max-height: calc(80dvh - 5em);
+    max-width: 80vw;
+}
+#guestbook{
+    position: absolute;
+    top: 52.9%;
+    left: 72.3%;
+}
+#entry_01{
+    top: 48.8%;
+    left: 23.2%;
+}
+#entry_02{
+    top: 47.6%;
+    left: 38%;
+}
+#entry_03{
+    top: 49.2%;
+    left: 54%;
+}
+#entry_04{
+    top: 38.4%;
+    left: 23.2%;
+}
+#entry_05{
+    top: 36.8%;
+    left: 29.5%;
+}
+#entry_06{
+    top: 25.6%;
+    left: 30.8%;
+}
+#entry_07{
+    top: 18.4%;
+    left: 37.6%;
+}
+#entry_08{
+    top: 32.4%;
+    left: 37.9%;
+}
+#entry_09{
+    top: 13.3%;
+    left: 51%;
+}
+#entry_10{
+    top: 20.8%;
+    left: 44.8%;
+}
+#entry_11{
+    top: 34%;
+    left: 45%;
+}
+#entry_12{
+    top: 08%;
+    left: 44%;
+}
+#entry_13{
+    top: 24.5%;
+    left: 51.5%;
+}
+#entry_14{
+    top: 37.3%;
+    left: 53.4%;
+}
+#entry_15{
+    top: 14.2%;
+    left: 64.6%;
+}
+#entry_16{
+    top: 26%;
+    left: 56.6%;
+}
+#entry_17{
+    top: 17.9%;
+    left: 69.5%;
+}
+#entry_18{
+    top: 38.3%;
+    left: 62.8%;
+}
+#entry_19{
+    top: 31.3%;
+    left: 71.3%;
+}
+#entry_20{
+    top: 19%;
+    left: 76.2%;
+}
+#entry_21{
+    top: 14.8%;
+    left: 81.6%;
+}
+#entry_22{
+    top: 26.8%;
+    left: 62.7%;
+}
+#entry_23{
+    top: 30.5%;
+    left: 76%;
+}
+#entry_24{
+    top: 42.8%;
+    left: 81.5%;
+}
+#entry_25{
+    top: 14.4%;
+    left: 57%;
+}
+#entry_26{
+    top: 18.7%;
+    left: 86.2%;
+}
+#entry_27{
+    top: 43.3%;
+    left: 68.3%;
+}
+#entry_28{
+    top: 31%;
+    left: 86%;
+}
