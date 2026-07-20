@@ -41,8 +41,10 @@ function activateOverlay(event, entryData, entryFilePath){
 }
 function deactivateOverlay(){
     const overlay = document.querySelector(".entry-overlay");
+    const image = document.querySelector(".entry-overlay .image");
     overlay.style.display = "none";
     document.body.style.overflow = "auto";
+    image.src = "";
 }
 
 export {activateOverlay, deactivateOverlay};

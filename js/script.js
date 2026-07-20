@@ -1,10 +1,11 @@
+const buttonPath = "02_Buttons/"
 $(function placeNavButtons() {
     let page_titles = ["Home", "Lobby", "Hallway", "Green Room", "Altare's Room", "Axel's Room", "Stage"];
-    let pages = ['index.php','lobby.php','hallway.php','greenroom.php','#','#','stage.php'];
+    let pages = ['index.php','lobby.php','hallway.php','greenroom.php','altare.php','axel.php','stage.php'];
     for (i = 1; i <= 7; i++){
         number = i < 10? '0'+i : i;
         $(".sidebar").append('<li><a href = "'+pages[i-1]+'"><h1>'+page_titles[i-1]+'</h1></a></li>');
-        $(".topbar").append('<li class="hideOnMobile"><a href = "'+pages[i-1]+'"><img id="button_'+number+'" src="Buttons/button_'+number+'.png" onmouseenter="buttonHover('+i+')" onmouseleave="buttonHover('+i+', false)"></a></li>');
+        $(".topbar").append('<li class="hideOnMobile"><a href = "'+pages[i-1]+'"><img id="button_'+number+'" src='+buttonPath+'button_'+number+'.png onmouseenter="buttonHover('+i+')" onmouseleave="buttonHover('+i+', false)"></a></li>');
     }
 });
 function showSidebar(){
@@ -22,13 +23,13 @@ function buttonHover(id, enter = true){
     let image;
     if (id < 10){
         button_id = "button_0"+id;
-        imgPathHover = "Buttons/button_0"+id+"_hover.png";
-        imgPathNormal = "Buttons/button_0"+id+".png";
+        imgPathHover = buttonPath+button_id+"_hover.png";
+        imgPathNormal = buttonPath+button_id+".png";
     }
     else{
         button_id = "button_"+id;
-        imgPathHover = "Buttons/button_"+id+"_hover.png";
-        imgPathNormal = "Buttons/button_"+id+".png";
+        imgPathHover = buttonPath+button_id+"_hover.png";
+        imgPathNormal = buttonPath+button_id+".png";
     }
     image = document.getElementById(button_id);
     image.src = enter? imgPathHover: imgPathNormal;

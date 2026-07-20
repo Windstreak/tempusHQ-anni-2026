@@ -7,3 +7,4 @@ async function loadCSV(path){
     return await $.csv.toArrays(data);
 }
 
+export {loadCSV}

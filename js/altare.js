@@ -1,26 +1,19 @@
 import { activateOverlay, deactivateOverlay } from "./overlay.js";
 import { loadCSV } from "./cvsLoader.js";
 
-const CSVPath =  "04_Entries/02_lobby/entries.csv";
-const iconFilePath = "04_Entries/02_lobby/00_icons/";
-const entryFilePath = "04_Entries/02_lobby/";
+const CSVPath =  "04_Entries/05_altare/entries.csv";
+const iconFilePath = "04_Entries/05_altare/00_icons/";
+const entryFilePath = "04_Entries/05_altare/";
 const entryData = await loadCSV(CSVPath);
 
 
 $(async function placeEntries() {
-    for (i = 1; i <= 3; i++){
+    for (i = 1; i <= 9; i++){
         number = i < 10? '0'+i : i;
         $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.PNG loading="lazy">');
         var entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
-    for (i = 4; i <= 28; i++){
-        number = i < 10? '0'+i : i;
-        $(".entries").append('<img class="entry photo" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.PNG loading="lazy">');
-        var entry = document.querySelector('#entry_'+number);
-        entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
-    }
-    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="04_Entries/02_lobby/00_icons/29_book_icon.PNG" loading="lazy"></a>');
     scaleEntries();
 });
 

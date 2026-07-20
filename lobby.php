@@ -6,11 +6,9 @@
     <title>Lobby</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lobby.css">
-    <link rel="stylesheet" href="css/entry-overlay.css">
     <link rel="stylesheet" href="css/entry.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-csv@1.0.21/src/jquery.csv.min.js"></script>
-    <script src="/js/cvsLoader.js"></script>
     <script src="/js/script.js"></script>
     <script type="module" src="/js/lobby.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +21,7 @@
         <img class='background-plate' src="01_Background/2_Lobby.png" loading="lazy">
         <div class="entries">
         </div>
-        <div class="entry-overlay">
-            <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f2933e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            <h1 class="title"></h1>
-            <img class="image" src="04_Entries/02_lobby/01_entry.PNG">
-            <div class="caption">
-                <p class="writing"></p>
-                <p class="author"><b ></b></p>
-            </div>
-        </div>
+        <?php include "entryOverlay.html"; ?>
     </main>
     <?php include "footer.html"; ?>
 </body>
