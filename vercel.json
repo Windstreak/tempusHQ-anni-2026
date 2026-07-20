@@ -69,10 +69,15 @@
     },
     {
       "src": "/api/index.php",
-      "dest": "/index"
+      "headers": { "Location": "/" },
+      "status": 307
     },
     {
-      "src": "/public/(.*)",
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/$1"
     }
   ]
