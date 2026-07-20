@@ -7,6 +7,20 @@ const CSVCol = {
     WRITER: 5,
     CAPTION: 6
 };
+$(function placeOverlay(){
+    $("overlay").load("entryOverlay.html");
+    $(document).keyup( function(e){
+        if (e.key === "Escape") {
+            deactivateOverlay();
+        }
+    });
+    $("overlay").on("click", ".close-button", function(e){
+        e.stopPropagation();
+        deactivateOverlay();
+    });
+})
+
+
 
 function activateOverlay(event, entryData, entryFilePath){
     const number_id = event.currentTarget.id.split("_")[1]

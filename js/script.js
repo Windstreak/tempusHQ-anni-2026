@@ -2,7 +2,6 @@ const buttonPath = "/02_buttons/"
 $(function placeHeaderFooter(){
     $("header").load("header.html"); 
     $("footer").load("footer.html");
-    console.log("done")
 });
 
 function showSidebar(){

@@ -10,10 +10,10 @@ const entryData = await loadCSV(CSVPath);
 $(async function placeEntries() {
     let number = "01";
     $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry.png loading="lazy">');
-    for (i = 2; i <= 7; i++){
-        number = i < 10? '0'+i : i;
+    for (let i = 2; i <= 7; i++){
+        let number = i < 10? '0'+i : i;
         $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy">');
-        var entry = document.querySelector('#entry_'+number);
+        let entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
     scaleEntries();
@@ -21,17 +21,11 @@ $(async function placeEntries() {
 
 function scaleEntries(){
     let screenwidth = $("main").width();
-    for (i = 1; i <= 28; i++){
-        number = i < 10? '0'+i : i;
+    for (let i = 1; i <= 28; i++){
+        let number = i < 10? '0'+i : i;
         $("#entry_"+number).css("scale", screenwidth/1920);
     }
     $("#guestbook").css("scale", screenwidth/1920);
 }
 
-window.onresize = scaleEntries
-$(".close-button").on("click", deactivateOverlay);
-$(document).keyup( function(e){
-    if (e.key === "Escape") {
-        deactivateOverlay();
-    }
-});
+window.onresize = scaleEntries;
