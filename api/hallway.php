@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hallway</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hallway.css">
-    <link rel="stylesheet" href="css/entry.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/hallway.css">
+    <link rel="stylesheet" href="/css/entry.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +16,11 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="01_Background/3_Hallway.png" loading="lazy">
+        <img class='background-plate' src="/01_Background/3_Hallway.png" loading="lazy">
         <div class="rooms">
-            <a href="altare.php"><img class="entry altare" src="04_Entries/03_hallway/01_door_icon.png"></a>
-            <a href="axel.php"><img class="entry axel" src="04_Entries/03_hallway/02_door_icon.png"></a>
-            <a href="staff.php"><img class="entry staff" src="04_Entries/03_hallway/03_door_icon.png"></a>
+            <a href="/altare"><img class="entry altare" src="/04_Entries/03_hallway/01_door_icon.png"></a>
+            <a href="/axel"><img class="entry axel" src="/04_Entries/03_hallway/02_door_icon.png"></a>
+            <a href="/staff"><img class="entry staff" src="/04_Entries/03_hallway/03_door_icon.png"></a>
         </div>
     </main>
     <?php include __DIR__ . "/../footer.html"; ?>

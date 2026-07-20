@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoloTEMPUS HQ 4th Anniversary Celebration</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="01_Background/1_ConcertHall.png" loading="lazy">
+        <img class='background-plate' src="/01_Background/1_ConcertHall.png" loading="lazy">
     </main>
     <?php include __DIR__ . "/../footer.html"; ?>
 </body>

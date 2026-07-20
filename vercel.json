@@ -5,6 +5,38 @@
   },
   "routes": [
     {
+      "src": "/",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/altare",
+      "dest": "/api/altare.php"
+    },
+    {
+      "src": "/axel",
+      "dest": "/api/axel.php"
+    },
+    {
+      "src": "/greenroom",
+      "dest": "/api/greenroom.php"
+    },
+    {
+      "src": "/hallway",
+      "dest": "/api/hallway.php"
+    },
+    {
+      "src": "/lobby",
+      "dest": "/api/lobby.php"
+    },
+    {
+      "src": "/staff",
+      "dest": "/api/staff.php"
+    },
+    {
+      "src": "/stage",
+      "dest": "/api/stage.php"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }

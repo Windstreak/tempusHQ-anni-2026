@@ -1,7 +1,7 @@
-const buttonPath = "02_Buttons/"
+const buttonPath = "/02_Buttons/"
 $(function placeNavButtons() {
     let page_titles = ["Home", "Lobby", "Hallway", "Green Room", "Altare's Room", "Axel's Room", "Stage"];
-    let pages = ['index.php','lobby.php','hallway.php','greenroom.php','altare.php','axel.php','stage.php'];
+    let pages = ['/','/lobby','/hallway','/greenroom','/altare','/axel','/stage'];
     for (i = 1; i <= 7; i++){
         number = i < 10? '0'+i : i;
         $(".sidebar").append('<li><a href = "'+pages[i-1]+'"><h1>'+page_titles[i-1]+'</h1></a></li>');
@@ -9,7 +9,7 @@ $(function placeNavButtons() {
         $(".topbar").append('<li class="hideOnMobile hover" id="button_'+number+'_hover"><a href = "'+pages[i-1]+'"><img src='+buttonPath+'button_'+number+'_hover.png onmouseleave="buttonHover('+i+', false)"></a></li>');
     }
     $(".sidebar").append('<li><a href=https://docs.google.com/document/d/16qCeph3zUwMeJO6AiE1Xw6MM_ITC0YITXeryXpWOtG8 target="blank"><h1>Accessibility</h1></a></li>');
-    $(".sidebar").append('<li><a href=staff.php><h1>Staff</h1></a></li>');
+    $(".sidebar").append('<li><a href=/staff><h1>Staff</h1></a></li>');
 });
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar');

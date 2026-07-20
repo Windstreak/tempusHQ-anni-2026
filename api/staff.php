@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/staff.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/staff.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
     <script type="module" src="/js/staff.js"></script>
@@ -17,7 +17,7 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="01_Background/8_Staff.png" loading="lazy">
+        <img class='background-plate' src="/01_Background/8_Staff.png" loading="lazy">
         <div class="scrollframe">
             <h1>Staff Credits</h1>
             <p class="credits staff"></p>
@@ -28,7 +28,7 @@
                     $files = scandir($promos_Path);
                     foreach($files as $file) {
                         if($file !== "." && $file !== "..") {
-                            $file = "05_Staff_Assets/Social Media/" . $file;
+                            $file = "/05_Staff_Assets/Social Media/" . $file;
                             echo "<img class=promo_image src='$file' />";
                         }
                     }

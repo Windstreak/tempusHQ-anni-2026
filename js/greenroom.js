@@ -1,9 +1,9 @@
 import { activateOverlay, deactivateOverlay } from "./overlay.js";
 import { loadCSV } from "./cvsLoader.js";
 
-const CSVPath =  "04_Entries/04_greenroom/entries.csv";
-const iconFilePath = "04_Entries/04_greenroom/00_icons/";
-const entryFilePath = "04_Entries/04_greenroom/";
+const CSVPath =  "/04_Entries/04_greenroom/entries.csv";
+const iconFilePath = "/04_Entries/04_greenroom/00_icons/";
+const entryFilePath = "/04_Entries/04_greenroom/";
 const entryData = await loadCSV(CSVPath);
 
 

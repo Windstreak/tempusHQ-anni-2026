@@ -1,9 +1,9 @@
 import { activateOverlay, deactivateOverlay } from "./overlay.js";
 import { loadCSV } from "./cvsLoader.js";
 
-const CSVPath =  "04_Entries/02_lobby/entries.csv";
-const iconFilePath = "04_Entries/02_lobby/00_icons/";
-const entryFilePath = "04_Entries/02_lobby/";
+const CSVPath =  "/04_Entries/02_lobby/entries.csv";
+const iconFilePath = "/04_Entries/02_lobby/00_icons/";
+const entryFilePath = "/04_Entries/02_lobby/";
 const entryData = await loadCSV(CSVPath);
 
 
@@ -20,7 +20,7 @@ $(async function placeEntries() {
         var entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
-    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="04_Entries/02_lobby/00_icons/29_book_icon.PNG" loading="lazy"></a>');
+    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="/04_Entries/02_lobby/00_icons/29_book_icon.PNG" loading="lazy"></a>');
     scaleEntries();
 });
 
