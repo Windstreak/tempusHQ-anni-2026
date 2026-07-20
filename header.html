@@ -1,13 +1,25 @@
-<header>
-    <nav class="banner">
-        <a href="#" class="menuButton" onclick=showSidebar()><img src="/assets/menu_glowstick_02.png"></a>
-        <img class="logo" src="/assets/logo.png">
-    </nav>
-    <nav class="navBar">
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        </ul>
-        <ul class="topbar">
-        </ul>
-    </nav>
-</header>
+<nav class="banner">
+    <a href="#" class="menuButton" onclick=showSidebar()><img src="Assets/menu_glowstick_02.png"></svg></a>
+    <img class="logo" src="Assets/logo.png">
+</nav>
+<nav class="navBar">
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    </ul>
+    <ul class="topbar">                
+    </ul>
+</nav>
+<script>
+    $(function placeNavButtons() {
+        let page_titles = ["Home", "Lobby", "Hallway", "Green Room", "Altare's Room", "Axel's Room", "Stage"];
+        let pages = ['/','/lobby.html','/hallway.html','/greenroom.html','/altare.html','/axel.html','/stage.html'];
+        for (i = 1; i <= 7; i++){
+            number = i < 10? '0'+i : i;
+            $(".sidebar").append('<li><a href = "'+pages[i-1]+'"><h1>'+page_titles[i-1]+'</h1></a></li>');
+            $(".topbar").append('<li class="hideOnMobile" id="button_'+number+'"><a href = "'+pages[i-1]+'"><img src='+buttonPath+'button_'+number+'.png onmouseenter="buttonHover('+i+')"></a></li>');
+            $(".topbar").append('<li class="hideOnMobile hover" id="button_'+number+'_hover"><a href = "'+pages[i-1]+'"><img src='+buttonPath+'button_'+number+'_hover.png onmouseleave="buttonHover('+i+', false)"></a></li>');
+        }
+        $(".sidebar").append('<li><a href=https://docs.google.com/document/d/16qCeph3zUwMeJO6AiE1Xw6MM_ITC0YITXeryXpWOtG8 target="blank"><h1>Accessibility</h1></a></li>');
+        $(".sidebar").append('<li><a href=/staff><h1>Staff</h1></a></li>');
+    });
+</script>
