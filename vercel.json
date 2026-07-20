@@ -1,81 +1,9 @@
 {
   "version": 2,
   "functions": {
-    "api/*.php": { "runtime": "vercel-php@0.9.0" }
+    "*.php": { "runtime": "vercel-php@0.9.0" }
   },
   "routes": [
-    {
-      "src": "/api/altare.php",
-      "headers": { "Location": "/altare" },
-      "status": 307
-    },
-    {
-      "src": "/altare",
-      "dest": "/api/altare.php"
-    },     
-    {
-      "src": "/api/axel.php",
-      "headers": { "Location": "/axel" },
-      "status": 307
-    },
-    {
-      "src": "/axel",
-      "dest": "/api/axel.php"
-    },
-    {
-      "src": "/api/greenroom.php",
-      "headers": { "Location": "/greenroom" },
-      "status": 307
-    },
-    {
-      "src": "/greenroom",
-      "dest": "/api/greenroom.php"
-    },
-    {
-      "src": "/api/hallway.php",
-      "headers": { "Location": "/hallway" },
-      "status": 307
-    },
-    {
-      "src": "/hallway",
-      "dest": "/api/hallway.php"
-    },
-    {
-      "src": "/api/lobby.php",
-      "headers": { "Location": "/lobby" },
-      "status": 307
-    },
-    {
-      "src": "/lobby",
-      "dest": "/api/lobby.php"
-    },
-    {
-      "src": "/api/staff.php",
-      "headers": { "Location": "/staff" },
-      "status": 307
-    },
-    {
-      "src": "/staff",
-      "dest": "/api/staff.php"
-    },
-    {
-      "src": "/api/stage.php",
-      "headers": { "Location": "/stage" },
-      "status": 307
-    },
-    {
-      "src": "/stage",
-      "dest": "/api/stage.php"
-    },
-    {
-      "src": "/api/index.php",
-      "headers": { "Location": "/" },
-      "status": 307
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
     {
       "src": "/(.*)",
       "dest": "/$1"

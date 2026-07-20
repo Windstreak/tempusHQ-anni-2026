@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/staff.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <script type="module" src="js/staff.js"></script>
+    <script src="/js/script.js"></script>
+    <script type="module" src="/js/staff.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                     $files = scandir($promos_Path);
                     foreach($files as $file) {
                         if($file !== "." && $file !== "..") {
-                            $file = $promos_Path . $file;
+                            $file = "05_Staff_Assets/Social Media/" . $file;
                             echo "<img class=promo_image src='$file' />";
                         }
                     }
