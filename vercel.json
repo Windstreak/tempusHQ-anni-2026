@@ -4,9 +4,7 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "routes": [
-    { "src": "/^/(altare|axel|greenroom|hallway|lobby|staff|stage)$", "dest": "/api/$1.php" },
-    { "src": "/", "dest": "/api/index.php" },
-    { "handle": "filesystem" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index.php" }
   ]
 }
