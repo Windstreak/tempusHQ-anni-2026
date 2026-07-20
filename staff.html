@@ -22,18 +22,7 @@
             <h1>Staff Credits</h1>
             <p class="credits staff"></p>
             <h1>Social Media Promotion Images</h1>
-            <div class="gallery">
-                <?php
-                    $promos_Path = "05_Staff_Assets/Social Media/";
-                    $files = scandir($promos_Path);
-                    foreach($files as $file) {
-                        if($file !== "." && $file !== "..") {
-                            $file = $promos_Path . $file;
-                            echo "<img class=promo_image src='$file' />";
-                        }
-                    }
-                ?>
-            </div>
+            <div class="gallery"></div>
         </div>
     </main>
     <footer></footer>
