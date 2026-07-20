@@ -46,23 +46,24 @@ function activateOverlay(event){
     const title = document.querySelector(".entry-overlay .title");
     const image = document.querySelector(".entry-overlay .image");
     const caption = document.querySelector(".entry-overlay .caption");
-    const author = document.querySelector(".entry-overlay .author b");
+    const writing = document.querySelector(".entry-overlay .caption .writing");
+    const author = document.querySelector(".entry-overlay .caption .author b");
     let author_string;
     overlay.style.display = "flex";
     console.log(entryData[id]);
     title.textContent = entryData[id][CSVCol.ENTRY_TITLE];
     image.src = "04_Entries/02_lobby/"+number_id+"_entry.png";
-    caption.textContent = entryData[id][CSVCol.CAPTION];
+    writing.textContent = entryData[id][CSVCol.CAPTION];
     if (entryData[id][CSVCol.ARTIST].trim() === entryData[id][CSVCol.WRITER].trim()){
         author_string = "Image and Captions by "+entryData[id][CSVCol.ARTIST];
     }
     else {
-        author_string = "Image by "+entryData[id][CSVCol.ARTIST]+"\r\n Writing by "+entryData[id][CSVCol.WRITER];
-
+        author_string = "Image by "+entryData[id][CSVCol.ARTIST]+"\r\nWriting by "+entryData[id][CSVCol.WRITER];
     }
     author.setAttribute('style', 'white-space: pre;')
     author.textContent = author_string;
     document.body.style.overflow = "hidden";
+    caption.scrollTop = 0;
 }
 function deactivateOverlay(){
     const overlay = document.querySelector(".entry-overlay");

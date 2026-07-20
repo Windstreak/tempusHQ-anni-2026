@@ -25,8 +25,10 @@
             <svg class="close-button" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f2933e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             <h1 class="title"></h1>
             <img class="image" src="04_Entries/02_lobby/01_entry.PNG">
-            <p class="caption"></p>
-            <p class="author"><b ></b></p>
+            <div class="caption">
+                <p class="writing"></p>
+                <p class="author"><b ></b></p>
+            </div>
         </div>
     </main>
     <?php include "footer.html"; ?>
