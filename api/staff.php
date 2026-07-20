@@ -17,18 +17,18 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="/01_Background/8_Staff.png" loading="lazy">
+        <img class='background-plate' src="/01_background/8_staff.png" loading="lazy">
         <div class="scrollframe">
             <h1>Staff Credits</h1>
             <p class="credits staff"></p>
             <h1>Social Media Promotion Images</h1>
             <div class="gallery">
                 <?php
-                    $promos_Path = __DIR__ . "/../05_Staff_Assets/Social Media/";
+                    $promos_Path = __DIR__ . "/../05_staff_assets/social_media/";
                     $files = scandir($promos_Path);
                     foreach($files as $file) {
                         if($file !== "." && $file !== "..") {
-                            $file = "/05_Staff_Assets/Social Media/" . $file;
+                            $file = "/05_staff_assets/social_media/" . $file;
                             echo "<img class=promo_image src='$file' />";
                         }
                     }

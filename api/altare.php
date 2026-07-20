@@ -18,10 +18,10 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="/01_Background/5_RoomAltare.png" loading="lazy">
+        <img class='background-plate' src="/01_background/5_roomaltare.png" loading="lazy">
         <div class="entries">
         </div>
-        <?php include __DIR__ . "/../entryOverlay.html"; ?>
+        <?php include __DIR__ . "/../entryoverlay.html"; ?>
     </main>
     <?php include __DIR__ . "/../footer.html"; ?>
 </body>

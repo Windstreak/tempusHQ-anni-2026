@@ -18,9 +18,9 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="/01_Background/7_Stage.png" loading="lazy">
+        <img class='background-plate' src="/01_background/7_stage.png" loading="lazy">
         <audio class="bgm" autoplay loop>
-            <source src="/03_Stage_Assets/bgm_Become_a_horizontal_line.mp3" type="audio/mpeg">
+            <source src="/03_stage_assets/bgm_become_a_horizontal_line.mp3" type="audio/mpeg">
         </audio>
         <div class="mute-toggle" onclick="toggleBGM()">
             <svg class="unmuted" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
@@ -32,7 +32,7 @@
                 The Altventurers, Axelotls, and Starmin have raised a total $1400 USD for two charities: Oceana International in Altare’s name, and Universidad Nacional Autónoma de México (UNAM)’s Adopt an Axolotl program in Axel’s name.<br>
                 <br>Scroll for more information on both charities!
             </p>
-            <img class="chibis" src="/03_Stage_Assets/Sea of Stars stage chibis/seaofstarscheeb - set.png" loading="lazy">
+            <img class="chibis" src="/03_stage_assets/sea_of_stars_stage_chibis/seaofstarscheeb-set.png" loading="lazy">
             <h1>Oceana International:</h1>
             <p>
                 An international non-for-profit organization that focuses on ocean conservation. Their advocacy works includes but is not limited to research, expeditions, campaigns, and policies. The organization works with multiple countries to increase transparency at sea, stop overfishing, and protect habitats of threatened species like turtles and sharks.<br>
@@ -43,12 +43,12 @@
                 This is part of UNAM's ecological restoration project that focuses on axolotl conservation and the prevention of their extinction. Axolotls only live in a specific region of Mexico, Xochimilco, but their habitats have faced immense damage through the years. UNAM's efforts through the years include working with local owners and farmers on restoring and preserving chinampas (man-made islands) where axolotls can live through safe channels.<br>
                 The donations collected will help preservation, creation of chinampas, lab maintenance for breeding and veterinary needs, research, and more so that quality of life and ecosystem restoration for these creatures helps them thrive.
             </p>
-            <img class="donorImage top" src="/03_Stage_Assets/Charity Certificates/regisaltarecharity01.png">
-            <img class="donorImage" src="/03_Stage_Assets/Charity Certificates/axelsyrioscharity01.png">
-            <img class="donorImage" src="/03_Stage_Assets/Charity Certificates/axelsyrioscharity02.png">
-            <img class="donorImage bottom" src="/03_Stage_Assets/donorlist.png">
+            <img class="donorImage top" src="/03_stage_assets/charity_certificates/regisaltarecharity01.png">
+            <img class="donorImage" src="/03_stage_assets/charity_certificates/axelsyrioscharity01.png">
+            <img class="donorImage" src="/03_stage_assets/charity_certificates/axelsyrioscharity02.png">
+            <img class="donorImage bottom" src="/03_stage_assets/donorlist.png">
             <p class="credits stage"></p>
-            <img class="chibis bottom" src="/03_Stage_Assets/Sea of Stars stage chibis/seaofstarscheeb - set.png" loading="lazy">
+            <img class="chibis bottom" src="/03_stage_assets/sea_of_stars_stage_chibis/seaofstarscheeb-set.png" loading="lazy">
         </div>
     </main>
     <?php include __DIR__ . "/../footer.html"; ?>

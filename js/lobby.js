@@ -1,26 +1,26 @@
 import { activateOverlay, deactivateOverlay } from "./overlay.js";
-import { loadCSV } from "./cvsLoader.js";
+import { loadCSV } from "./cvsloader.js";
 
-const CSVPath =  "/04_Entries/02_lobby/entries.csv";
-const iconFilePath = "/04_Entries/02_lobby/00_icons/";
-const entryFilePath = "/04_Entries/02_lobby/";
+const CSVPath =  "/04_entries/02_lobby/entries.csv";
+const iconFilePath = "/04_entries/02_lobby/00_icons/";
+const entryFilePath = "/04_entries/02_lobby/";
 const entryData = await loadCSV(CSVPath);
 
 
 $(async function placeEntries() {
     for (i = 1; i <= 3; i++){
         number = i < 10? '0'+i : i;
-        $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.PNG loading="lazy">');
+        $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy">');
         var entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
     for (i = 4; i <= 28; i++){
         number = i < 10? '0'+i : i;
-        $(".entries").append('<img class="entry photo" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.PNG loading="lazy">');
+        $(".entries").append('<img class="entry photo" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy">');
         var entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
-    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="/04_Entries/02_lobby/00_icons/29_book_icon.PNG" loading="lazy"></a>');
+    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="/04_entries/02_lobby/00_icons/29_book_icon.png" loading="lazy"></a>');
     scaleEntries();
 });
 

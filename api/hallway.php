@@ -16,11 +16,11 @@
 <body>
     <?php include __DIR__ . "/../header.html"; ?>
     <main>
-        <img class='background-plate' src="/01_Background/3_Hallway.png" loading="lazy">
+        <img class='background-plate' src="/01_background/3_hallway.png" loading="lazy">
         <div class="rooms">
-            <a href="/altare"><img class="entry altare" src="/04_Entries/03_hallway/01_door_icon.png"></a>
-            <a href="/axel"><img class="entry axel" src="/04_Entries/03_hallway/02_door_icon.png"></a>
-            <a href="/staff"><img class="entry staff" src="/04_Entries/03_hallway/03_door_icon.png"></a>
+            <a href="/altare"><img class="entry altare" src="/04_entries/03_hallway/01_door_icon.png"></a>
+            <a href="/axel"><img class="entry axel" src="/04_entries/03_hallway/02_door_icon.png"></a>
+            <a href="/staff"><img class="entry staff" src="/04_entries/03_hallway/03_door_icon.png"></a>
         </div>
     </main>
     <?php include __DIR__ . "/../footer.html"; ?>

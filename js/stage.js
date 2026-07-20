@@ -1,4 +1,4 @@
-const staff_txt = "03_Stage_Assets/charitycredit.txt";
+const staff_txt = "03_stage_assets/charitycredit.txt";
 
 $(function placeStaffCredits() {
     const staff_credits = document.querySelector(".credits.stage");

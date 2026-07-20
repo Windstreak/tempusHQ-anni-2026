@@ -1,4 +1,4 @@
-const buttonPath = "/02_Buttons/"
+const buttonPath = "/02_buttons/"
 $(function placeNavButtons() {
     let page_titles = ["Home", "Lobby", "Hallway", "Green Room", "Altare's Room", "Axel's Room", "Stage"];
     let pages = ['/','/lobby','/hallway','/greenroom','/altare','/axel','/stage'];
