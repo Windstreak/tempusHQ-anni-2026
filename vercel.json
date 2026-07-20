@@ -6,7 +6,6 @@
   },
   "routes": [
     { "src": "/^/(altare|axel|greenroom|hallway|lobby|staff|stage)$", "dest": "/api/$1.php" },
-    { "src": "/", "dest": "/api/index.php" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/", "dest": "/api/index.php" }
   ]
 }
