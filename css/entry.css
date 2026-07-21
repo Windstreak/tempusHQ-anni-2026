@@ -35,6 +35,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
 }
 .entry-overlay .title{
     color: #2a3e49;
