@@ -7,7 +7,7 @@ const CSVCol = {
     WRITER: 5,
     CAPTION: 6
 };
-$(function placeOverlay(){
+function placeOverlay(){
     console.log("overlay placing");
     $("overlay").load("entryOverlay.html");
     $(document).keyup( function(e){
@@ -19,7 +19,7 @@ $(function placeOverlay(){
         e.stopPropagation();
         deactivateOverlay();
     });
-})
+}
 
 
 
