@@ -7,8 +7,7 @@ const CSVCol = {
     WRITER: 5,
     CAPTION: 6
 };
-function placeOverlay(){
-    console.log("overlay placing");
+$(function placeOverlay(){
     $("overlay").load("entryOverlay.html");
     $(document).keyup( function(e){
         if (e.key === "Escape") {
