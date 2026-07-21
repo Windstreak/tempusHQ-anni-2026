@@ -11,10 +11,12 @@ $(placeOverlay());
 $(async function placeEntries() {
     let number = "01";
     $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry.png loading="lazy">');
+    let entry = document.querySelector('#entry_'+number);
+    entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     for (let i = 2; i <= 7; i++){
-        let number = i < 10? '0'+i : i;
+        number = i < 10? '0'+i : i;
         $(".entries").append('<img class="entry art" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy">');
-        let entry = document.querySelector('#entry_'+number);
+        entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
     scaleEntries();
