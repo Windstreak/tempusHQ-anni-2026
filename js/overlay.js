@@ -63,6 +63,9 @@ function activateOverlay(event, entryData, entryFilePath){
             toggleFullScreen();
         }
     };
+    window.onresize = function (){
+        console.log(""+window.innerWidth+ ", "+window.innerHeight);
+    };
 }
 function deactivateOverlay(){
     const overlay = document.querySelector(".entry-overlay");
