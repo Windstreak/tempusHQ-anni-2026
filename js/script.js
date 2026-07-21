@@ -6,4 +6,7 @@ $(function placeHeaderFooter(){
 });
 
 window.onresize = scaleEntries;
-window.addEventListener("orientationchange", scaleEntries);
+window.addEventListener("orientationchange", function(){
+     scaleEntries();
+     $(".body").append('<p>orientationchange</p>');
+});
