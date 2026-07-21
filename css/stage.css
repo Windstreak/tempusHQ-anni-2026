@@ -24,6 +24,7 @@
 }
 .scrollframe .donorImage{
     padding: 0.75em;
+    width: 80%;
 }
 .scrollframe .donorImage.top{
     padding-top: 2.5em;
