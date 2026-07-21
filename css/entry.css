@@ -7,7 +7,7 @@
     height: 100%;
 }
 .entry{
-    transform-origin: top left;
+    /* transform-origin: top left; */
     position: absolute;
 }
 .entry:hover{
@@ -23,7 +23,6 @@
     animation-name: tiltOnHover;
     animation-duration: 0.2s;
     rotate: 5deg;
-    transform-origin: center;
 }
 .entry-overlay{
     position: fixed;
