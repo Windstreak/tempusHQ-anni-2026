@@ -24,7 +24,6 @@ function placeOverlay(){
 function activateOverlay(event, entryData, entryFilePath){
     const number_id = event.currentTarget.id.split("_")[1]
     const id = parseInt(number_id);
-    const id = parseInt(number_id);
     const overlay = document.querySelector(".entry-overlay");
     const title = document.querySelector(".entry-overlay .title");
     const buffering = document.querySelector(".entry-overlay .buffering");
