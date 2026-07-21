@@ -34,9 +34,9 @@ function activateOverlay(event, entryData, entryFilePath){
     const author = document.querySelector(".entry-overlay .caption .author b");
     let author_string = "";
     overlay.style.display = "flex";
-    title.textContent = entryData[id][CSVCol.ENTRY_TITLE];
+    title.innerHTML = entryData[id][CSVCol.ENTRY_TITLE];
     image.src = entryFilePath+number_id+"_entry.png";
-    writing.textContent = entryData[id][CSVCol.CAPTION];
+    writing.innerHTML = entryData[id][CSVCol.CAPTION];
     if (event.currentTarget.classList.contains("art")){
         author_string += "Art"
     }
@@ -44,12 +44,12 @@ function activateOverlay(event, entryData, entryFilePath){
         author_string += "Photography"
     }
     if (entryData[id][CSVCol.ARTIST].trim() === entryData[id][CSVCol.WRITER].trim()){
-        author_string += " by "+entryData[id][CSVCol.ARTIST];
+        author_string += event.currentTarget.classList.contains("art")? " and writing by "+entryData[id][CSVCol.ARTIST] : " by "+entryData[id][CSVCol.ARTIST];
     }
     else {
         author_string += " by "+entryData[id][CSVCol.ARTIST]+"\r\nWriting by "+entryData[id][CSVCol.WRITER];
     }
-    author.textContent = author_string;
+    author.innerHTML = author_string;
     document.body.style.overflow = "hidden";
     caption.scrollTop = 0;
 }
