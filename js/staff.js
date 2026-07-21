@@ -45,7 +45,7 @@ function promoHover(promo_img, hover){
     id = id.split(".")[0];
     let promo_text = document.getElementById(id);
     if (hover){
-        promo_img.style = "filter: brightness(80%)";
+        promo_img.style = "filter: brightness(50%)";
         promo_text.style = "display: inline";
     }
     else{
