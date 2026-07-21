@@ -27,6 +27,7 @@ function activateOverlay(event, entryData, entryFilePath){
     const id = parseInt(number_id);
     const overlay = document.querySelector(".entry-overlay");
     const title = document.querySelector(".entry-overlay .title");
+    const buffering = document.querySelector(".entry-overlay .buffering");
     const image = document.querySelector(".entry-overlay .image");
     const caption = document.querySelector(".entry-overlay .caption");
     const writing = document.querySelector(".entry-overlay .caption .writing");
@@ -35,6 +36,10 @@ function activateOverlay(event, entryData, entryFilePath){
     overlay.style.display = "flex";
     title.innerHTML = entryData[id][CSVCol.ENTRY_TITLE];
     image.src = entryFilePath+number_id+"_entry.png";
+    image.addEventListener("load", function() {
+        buffering.style = "display: none";
+        image.style.display = "inline";
+    });
     writing.innerHTML = entryData[id][CSVCol.CAPTION];
     if (event.currentTarget.classList.contains("art")){
         author_string += "Art"
@@ -55,9 +60,12 @@ function activateOverlay(event, entryData, entryFilePath){
 function deactivateOverlay(){
     const overlay = document.querySelector(".entry-overlay");
     const image = document.querySelector(".entry-overlay .image");
+    const buffering = document.querySelector(".entry-overlay .buffering");
     overlay.style.display = "none";
     document.body.style.overflow = "auto";
     image.src = "";
+    image.style = "display: none";
+    buffering.style = "display: inline";
 }
 
 export {placeOverlay, activateOverlay, deactivateOverlay};

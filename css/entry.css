@@ -54,6 +54,25 @@
 .entry-overlay .close-button:hover{
     background-color: rgba(255,255,255,1);
 }
+.entry-overlay .buffering{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entry-overlay .buffering svg{
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    transform-origin: center;
+    animation: bufferSpin 0.5s linear infinite;
+}
+@keyframes bufferSpin {
+    0% {rotate: 0deg;
+    }
+    100% {rotate: 360deg;
+    }
+}
 .entry-overlay .image{
     max-height: calc(77dvh);
     /* min-height: 57dvh; */
