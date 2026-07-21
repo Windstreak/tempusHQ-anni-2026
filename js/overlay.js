@@ -8,6 +8,7 @@ const CSVCol = {
     CAPTION: 6
 };
 $(function placeOverlay(){
+    console.log("overlay placing");
     $("overlay").load("entryOverlay.html");
     $(document).keyup( function(e){
         if (e.key === "Escape") {
@@ -18,7 +19,7 @@ $(function placeOverlay(){
         e.stopPropagation();
         deactivateOverlay();
     });
-}
+})
 
 
 
