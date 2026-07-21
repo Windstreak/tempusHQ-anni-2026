@@ -25,5 +25,6 @@ $(async function placeEntries() {
         entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
+    scaleEntries();
 });
 
