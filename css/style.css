@@ -124,11 +124,11 @@ footer{
     height: 100px;
 }
 footer #eds{
-    width: 100px;
+    width: 100px; 
 }
 
 @media(max-width: 800px){
-    .hideOnMobile{
+    .topbar{
         display: none;
     }
 }

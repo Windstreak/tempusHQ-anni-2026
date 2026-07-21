@@ -1,10 +1,12 @@
 function scaleEntries(){
+    console.log("triggered scale entries");
     let screenwidth = $("main").width();
-    for (let i = 1; i <= 28; i++){
+    let entries = document.querySelectorAll(".entry");
+    console.log(entries);
+    for (let i = 0; i < entries.length; i++){
         let number = i < 10? '0'+i : i;
-        $("#entry_"+number).css("scale", screenwidth/1920);
+        entries[i].style="scale:"+screenwidth/1920+";";
     }
-    $("#guestbook").css("scale", screenwidth/1920);
 }
 
 export {scaleEntries};
