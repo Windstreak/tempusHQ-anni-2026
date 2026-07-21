@@ -89,6 +89,7 @@
     .entry-overlay .caption{
         min-width: 200px;
         max-width: 90vw;
+        margin-bottom: 4em;
     }
 }
 .entry-overlay p{
