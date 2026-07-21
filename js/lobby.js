@@ -1,4 +1,4 @@
-import { activateOverlay, deactivateOverlay } from "./overlay.js";
+import { placeOverlay, activateOverlay, deactivateOverlay } from "./overlay.js";
 import { loadCSV } from "./cvsloader.js";
 
 const CSVPath =  "/04_entries/02_lobby/entries.csv";
@@ -6,6 +6,7 @@ const iconFilePath = "/04_entries/02_lobby/00_icons/";
 const entryFilePath = "/04_entries/02_lobby/";
 const entryData = await loadCSV(CSVPath);
 
+$(placeOverlay());
 
 $(async function placeEntries() {
     for (let i = 1; i <= 3; i++){

@@ -7,7 +7,7 @@ const CSVCol = {
     WRITER: 5,
     CAPTION: 6
 };
-$(function placeOverlay(){
+function placeOverlay(){
     $("overlay").load("entryOverlay.html");
     $(document).keyup( function(e){
         if (e.key === "Escape") {
@@ -18,7 +18,7 @@ $(function placeOverlay(){
         e.stopPropagation();
         deactivateOverlay();
     });
-})
+}
 
 
 
@@ -60,4 +60,4 @@ function deactivateOverlay(){
     image.src = "";
 }
 
-export {activateOverlay, deactivateOverlay};
+export {placeOverlay, activateOverlay, deactivateOverlay};
