@@ -1,6 +1,6 @@
-const staff_txt = "05_Staff_Assets/staffcredit.txt";
-const promos_path = "/05_Staff_Assets/social_media/";
-const promos_txt = "05_Staff_Assets/promo_image_paths.txt/";
+const staff_txt = "05_staff_assets/staffcredit.txt";
+const promos_path = "/05_staff_assets/social_media/";
+const promos_txt = "05_staff_assets/promo_image_paths.txt/";
 
 $(function placeStaffCredits() {
     const staff_credits = document.querySelector(".credits.staff");
