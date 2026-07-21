@@ -9,7 +9,7 @@ $(function placeStaffCredits() {
 });
 
 $(function placePromos() {
-    var text = loadFile(promos_txt).split("\r\n");
+    var text = loadFile(promos_txt).split("\n");
     console.log(text);
     for(let i = 0; i < text.length; i++){
         $(".gallery").append( "<div class=promo><img class=promo_image src='"+ text[i] +"'><p class=promo_credit>kill me</p></div>" );
