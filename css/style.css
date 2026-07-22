@@ -119,6 +119,7 @@ main{
     padding: 10px 0px;
 }
 main .background-plate{
+    width: 99vw;
     max-width: 99vw;
 }
 footer{
