@@ -1,10 +1,10 @@
 .scrollframe{
     position: absolute;
     left: 2.4%;
-    top: calc(4.3% + 9px);
+    top: 5.2%;
     /* background-color: rgba(255,255,255,0.8); */
     overflow-y: auto;
-    height: calc(90.74% - 18px);
+    height: 88.13%;
     width: 95.1%;
     display: flex;
     font-size: 25px;
