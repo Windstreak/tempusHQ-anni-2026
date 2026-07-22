@@ -9,7 +9,7 @@ $(function placeNavButtons() {
         $(".topbar").append('<li id="button_'+number+'"><a href = "'+pages[i-1]+'"><img src='+buttonPath+'button_'+number+'.png onmouseenter="buttonHover('+i+')"></a></li>');
         $(".topbar").append('<li class="hover" id="button_'+number+'_hover"><a href = "'+pages[i-1]+'"><img src='+buttonPath+'button_'+number+'_hover.png onmouseleave="buttonHover('+i+', false)"></a></li>');
     }
-    $(".sidebar").append('<li><a href=https://docs.google.com/document/d/16qCeph3zUwMeJO6AiE1Xw6MM_ITC0YITXeryXpWOtG8 target="blank"><h1>Accessibility</h1></a></li>');
+    $(".sidebar").append('<li><a href=https://docs.google.com/document/d/16qCeph3zUwMeJO6AiE1Xw6MM_ITC0YITXeryXpWOtG8 target="blank"><h1 class="external">Accessibility</h1></a></li>');
     $(".sidebar").append('<li><a href=/staff.html><h1>Staff</h1></a></li>');
 });
 function showSidebar(){

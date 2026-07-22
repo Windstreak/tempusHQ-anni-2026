@@ -20,12 +20,12 @@ $(async function placeEntries() {
             entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
         }
         else{
-            $(".entries").append('<a href="https://drive.google.com/drive/folders/1X7hYFt84bsaQ0JVBv1zIBMcxVbYh64pA" target="blank"><img class="entry art tiltable" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
+            $(".entries").append('<a href="https://drive.google.com/drive/folders/1X7hYFt84bsaQ0JVBv1zIBMcxVbYh64pA" target="blank"><img class="entry art tiltable external" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
         }
     }
     number="09";
-    $(".entries").append('<a href="https://drive.google.com/drive/u/2/folders/184XtAMQ0QdOZk92hvh6S1drWGZPP_CvM" target="blank"><img class="entry art tiltable" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
+    $(".entries").append('<a href="https://drive.google.com/drive/u/2/folders/184XtAMQ0QdOZk92hvh6S1drWGZPP_CvM" target="blank"><img class="entry art tiltable external" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
     number="10";
-    $(".entries").append('<a href="https://drive.google.com/drive/folders/1vtSQq5OMe6Li6lcxsVkk0GK5HVGfnJei" target="blank"><img class="entry art tiltable" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
+    $(".entries").append('<a href="https://drive.google.com/drive/folders/1vtSQq5OMe6Li6lcxsVkk0GK5HVGfnJei" target="blank"><img class="entry art tiltable external" id="entry_'+number+'" src='+iconFilePath+number+'_entry_icon.png loading="lazy"></a>');
     scaleEntries();
 });

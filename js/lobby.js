@@ -22,6 +22,6 @@ $(async function placeEntries() {
         let entry = document.querySelector('#entry_'+number);
         entry.addEventListener("click", function (e){activateOverlay(e, entryData, entryFilePath)});
     }
-    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry" id="guestbook" src="/04_entries/02_lobby/00_icons/29_book_icon.png" loading="lazy"></a>');
+    $(".entries").append('<a href="https://www.kudoboard.com/boards/aZk5R0X8" target="_blank"><img class="entry external" id="guestbook" src="/04_entries/02_lobby/00_icons/29_book_icon.png" loading="lazy"></a>');
     scaleEntries();
 });
