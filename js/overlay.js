@@ -53,7 +53,7 @@ function activateOverlay(event, entryData, entryFilePath){
         author_string += " by "+entryData[id][CSVCol.ARTIST]+"<br>Writing by "+entryData[id][CSVCol.WRITER];
     }
     author.innerHTML = author_string;
-    document.body.style.overflow = "hidden";
+    document.body.style = "overflow-y: hidden";
     caption.scrollTop = 0;
 }
 function deactivateOverlay(){
@@ -61,7 +61,7 @@ function deactivateOverlay(){
     const image = document.querySelector(".entry-overlay .image");
     const buffering = document.querySelector(".entry-overlay .buffering");
     overlay.style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style = "overflow-y: auto";
     image.src = "";
     image.style = "display: none";
     buffering.style = "display: inline";

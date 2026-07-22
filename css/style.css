@@ -10,6 +10,7 @@ body{
     background-position: center;
     color: #2a3e49;
     font-family: "Winky Sans";
+    overflow-x: hidden;
 }
 h1{
     font-family: "Poetsen One";
