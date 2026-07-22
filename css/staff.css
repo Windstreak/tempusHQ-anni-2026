@@ -7,21 +7,21 @@
     height: 88.13%;
     width: 95.1%;
     display: flex;
+    font-size: 25px;
     flex-direction: column;
     align-items: center;
 }
 h1{
+    font-size: 2em;
     text-align: center;
-    padding-top: 0.5em;
 }
 .credits{
     white-space: initial;
-    font-size: 25px;
     text-align: center;
 }
 @media (pointer:none), (pointer:coarse){
-    .credits{
-        font-size: 1.3vw;
+    .scrollframe{
+        font-size: 2.3vw;
     }
 }
 .gallery{
@@ -46,6 +46,6 @@ h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    font-size: 3em;
+    font-size: 1.5em;
     color: white;
 }

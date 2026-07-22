@@ -8,12 +8,15 @@
     height: 55%;
     width: 58.4%;
     display: flex;
+    font-size: 1.3vw;
     flex-direction: column;
     align-items: center;
 }
+h1{
+    text-align: center;
+}
 .scrollframe p{
-    padding: 0px 5px; 
-    font-size: 1.3vw;
+    padding: 0px 5px;
     text-align: center;
 }
 .scrollframe .chibis{
